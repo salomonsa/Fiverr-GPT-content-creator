@@ -1,5 +1,10 @@
 # Fiverr-GPT-content-creator
-IMPORTANT STUFF:
+
+To install the program:
+
+git clone https://github.com/salomonsa/Fiverr-GPT-content-creator.git
+
+IMPORTANT STUFF, READ BEFORE USING THE PROGRAM:
 
 1. Change the name of the .dotenv file to .env, open it and write your OPENAI API token, your desired mail with its password in their respective variables.
 
@@ -11,10 +16,8 @@ IMPORTANT STUFF:
 
 5. If you want to change the amount of minutes the program waits between finishing the upload of a video and starting to generate and upload the next one, you can go to the variable minutes in the main.py file and change it there (it is a float so decimals are allowed).
 
-6. DON'T delete the data folder.
+6. Create the following 3 folders on your directory: music, video, data. Put inside the music and video folders the music and videos you want to use. Never delete the data folder.
 
-7. Put inside the music and video folders the music and videos you want to use.
+7. All videos, titles, descriptions and tags are saved in the output folder, each on their own folder following the name pattern Folder1, Folder2, etc. Inside each of these folders, like Folder1 for example, there will be the following: video.mp4 title.txt description.txt and tags.txt each representing their respective attributes according to their file names.
 
-8. All videos, titles, descriptions and tags are saved in the output folder, each on their own folder following the name pattern Folder1, Folder2, etc. Inside each of these folders, like Folder1 for example, there will be the following: video.mp4 title.txt description.txt and tags.txt each representing their respective attributes according to their file names.
-
-9. Just tell me if there's anything not going well or lacking! :)
+8. Just tell me if there's anything not going well or lacking! :)
