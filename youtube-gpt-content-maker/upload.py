@@ -2,7 +2,7 @@ from playwright.sync_api import Playwright, sync_playwright, expect
 import time
 
 def SignIn(playwright: Playwright, mail: str,password: str)-> None:
-    browser = playwright.firefox.launch(headless=False)
+    browser = playwright.firefox.launch(headless=True)
     context = browser.new_context()
     page = context.new_page()
     page.goto("https://www.youtube.com/")
@@ -18,7 +18,7 @@ def SignIn(playwright: Playwright, mail: str,password: str)-> None:
     context.close()
     browser.close()
 def run(playwright: Playwright, file_path: str, title: str, desc: str, tags: str, minutes: float) -> None:
-    browser = playwright.firefox.launch(headless=False)
+    browser = playwright.firefox.launch(headless=True)
     context = browser.new_context(storage_state="./data/state.json")
     page = context.new_page()
     page.goto("https://www.youtube.com/")
