@@ -37,10 +37,10 @@ if __name__ == "__main__":
         errors=0
         while True:
             prompt="Motivation"
+            print("Creating video...")
             textlist = generate_text_list(prompt)
             division=textlist.split("[m]")
             text=division[0]
-            print(text)
             text=text.replace("\"", '')
             title=division[1]
             title=title.replace("\"", '')
@@ -48,13 +48,8 @@ if __name__ == "__main__":
             desc=desc.replace("\"", '')
             tags=division[3]
             tags=tags.replace("\"", '')
-            print(text)
-            print(title)
-            print(desc)
-            print(tags)
             file_name = 'video.mp4'
             textoclip=re.split(r'[^\w\s\'\"!]', text)
-            print(textoclip)
             wordsperpart=[]
             for texto in textoclip:
                 numberwlist=texto.split()
@@ -68,7 +63,6 @@ if __name__ == "__main__":
             d=0
             for durations in durationperpart:
                 d=d+durations
-            print(d)
             with open(file_path+'/title.txt', 'w') as f:
                 f.write(title)
             with open(file_path+'/description.txt', 'w') as f:
@@ -94,6 +88,7 @@ if __name__ == "__main__":
 
             #Amount of minutes the program waits to create and upload another video once the first one is uploaded
             minutes=0
+            print("Uploading video...")
             with sync_playwright() as playwright:
                 run(playwright, f'{file_path}/{file_name}', title, desc, tags,minutes)
             break
