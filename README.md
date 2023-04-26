@@ -20,4 +20,6 @@ IMPORTANT STUFF, READ BEFORE USING THE PROGRAM:
 
 7. All videos, titles, descriptions and tags are saved in the output folder, each on their own folder following the name pattern Folder1, Folder2, etc. Inside each of these folders, like Folder1 for example, there will be the following: video.mp4 title.txt description.txt and tags.txt each representing their respective attributes according to their file names.
 
-8. Just tell me if there's anything not going well or lacking! :)
+8. The language set to the Google account you're using must be english, so change it if you have any other language on.
+
+9. Just tell me if there's anything not going well or lacking! :)
