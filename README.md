@@ -6,7 +6,7 @@ git clone https://github.com/salomonsa/Fiverr-GPT-content-creator.git
 
 IMPORTANT STUFF, READ BEFORE USING THE PROGRAM:
 
-1. Change the name of the .dotenv file to .env, open it and write your OPENAI API token, your desired mail with its password in their respective variables.
+1. Change the name of the env-example file to .env, open it and write your OPENAI API token, your desired mail with its password in their respective variables.
 
 2. Install all the requirements in the requirements.txt file. Also, and this is ESSENTIAL for the program to work, install separately Imagemagick in its official website. If there's an error regarding ImageMagick while using the program and ImageMagick is installed in your computer, you must rewrite the following line of code in main.py: change_settings({"IMAGEMAGICK_BINARY": r"C:/Program Files/ImageMagick-7.1.1-Q16-HDRI/magick.exe"}) to the following change_settings({"IMAGEMAGICK_BINARY": r"{Directory in which you've installed ImageMagick}/magick.exe"}) replacing accordingly what's inside the curly brackets.
 
