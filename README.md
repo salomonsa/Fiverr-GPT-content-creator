@@ -14,7 +14,7 @@ IMPORTANT STUFF, READ BEFORE USING THE PROGRAM:
 
 4. If there is any error regarding the upload of the video or the Youtube Sign in, you can go to the upload.py and change the following line of code in the 2 functions (line 5 and line 21): browser = playwright.firefox.launch(headless=True) to browser = playwright.firefox.launch(headless=False). This will allow you to see directly which part of the process is failing exactly. Most of the time these errors will be caused by the pop-ups mentioned in point 3, so you should be able to solve them without changing any code and just closing those pop-ups. Once you've detected the error, you can change the lines of code to what they were before.
 
-5. If you want to change the amount of minutes the program waits between finishing the upload of a video and starting to generate and upload the next one, you can go to the variable minutes in the main.py file and change it there (it is a float so decimals are allowed).
+5. If you want to change the amount of minutes the program waits between finishing the upload of a video and starting to generate and upload the next one, you can go to the variable minutes in the main.py file (line 90) and change it there (it is a float so decimals are allowed).
 
 6. Create the following 3 folders on your directory: music, video, data. Put inside the music and video folders the music and videos you want to use. Never delete the data folder.
 
